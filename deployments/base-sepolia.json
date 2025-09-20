@@ -1,0 +1,15 @@
+{
+  "network": "baseSepolia",
+  "token": {
+    "address": "0x57a91369B0dEc118cEB2D65991C35ab6Bcebf56f",
+    "constructorArgs": ["0xFE5118981d9D988C8581ce0B7EBd7d5D3A4114CB"]
+  },
+  "vesting": {
+    "address": "0xaF28639F23747DE329952aF18F04d48851410667",
+    "constructorArgs": [
+      "0xFE5118981d9D988C8581ce0B7EBd7d5D3A4114CB",
+      1789935904,
+      94608000
+    ]
+  }
+}

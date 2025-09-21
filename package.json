@@ -7,7 +7,9 @@
     "testnet:verify": "hardhat run scripts/testnet/verify.ts --network baseSepolia",
     "testnet:deploy": "hardhat run scripts/testnet/deploy.ts --network baseSepolia",
     "testnet:approve": "hardhat run scripts/testnet/approve.ts --network baseSepolia",
-    "mainnet:verify": "hardhat run scripts/mainnet/verify.ts --network base"
+    "mainnet:verify": "hardhat run scripts/mainnet/verify.ts --network base",
+    "mainnet:deploy": "hardhat run scripts/mainnet/deploy.ts --network base",
+    "mainnet:approve": "hardhat run scripts/mainnet/approve.ts --network base"
   },
   "keywords": [],
   "author": "",

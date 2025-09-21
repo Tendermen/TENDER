@@ -3,12 +3,12 @@ import { ethers } from "hardhat";
 
 /**
  * Usage:
- *  TOKEN=0x... SPENDER=0x... AMOUNT=100000 npx hardhat run scripts/approve.ts --network baseSepolia
+ *  TOKEN=0x... SPENDER=0x... AMOUNT=100000 npx hardhat run scripts/approve.ts --network base
  *  (AMOUNT is in whole tokens; script handles decimals = 18 by default)
  */
 async function main() {
-  const tokenAddr = "0x57a91369B0dEc118cEB2D65991C35ab6Bcebf56f"; // TNDR default
-  const spender   = "0x27F971cb582BF9E50F397e4d29a5C7A34f11faA2"; // router/manager address
+  const tokenAddr = "0xD199870e61018163f1214d1790A5d49c556b812F"; // TNDR mainnet address
+  const spender   = "0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24"; // Base mainnet Uniswap V3 router
   const amountStr = "45000000";  // e.g., "45000000" for 45,000,000m TNDR
 
   const [signer] = await ethers.getSigners();

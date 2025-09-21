@@ -28,13 +28,15 @@ async function verifyOne(address: string, constructorArguments: any[]) {
 
 async function main() {
   // Choose file by network (baseSepolia or base)
-  const net = (await ethers.provider.getNetwork()).name || "baseSepolia";
+  const net = (await ethers.provider.getNetwork()).name || "base";
   const file =
     net.toLowerCase().includes("sepolia")
       ? "base-sepolia.json"
       : "base.json";
 
-  const p = path.join(__dirname, "..", "deployments", file);
+  console.log("file", file);
+
+  const p = path.join(__dirname, "..", "..", "deployments", file);
   if (!fs.existsSync(p)) {
     throw new Error(`Deployments file not found: ${p}`);
   }

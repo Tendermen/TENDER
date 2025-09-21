@@ -1,0 +1,15 @@
+{
+  "network": "base",
+  "token": {
+    "address": "0xD199870e61018163f1214d1790A5d49c556b812F",
+    "constructorArgs": ["0xFE5118981d9D988C8581ce0B7EBd7d5D3A4114CB"]
+  },
+  "vesting": {
+    "address": "0x79eBA7BfB04831C37d24154669b637D9bA8F54EB",
+    "constructorArgs": [
+      "0xFE5118981d9D988C8581ce0B7EBd7d5D3A4114CB",
+      1789935904,
+      94608000
+    ]
+  }
+}
